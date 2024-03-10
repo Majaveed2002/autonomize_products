@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import ProductCard from "./ProductCard";
-import { FadeLoader } from "react-spinners";
+import { MoonLoader } from "react-spinners";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -27,9 +27,9 @@ function Products() {
       <div>
         {loading ? (
           <div className="h-[70vh] flex justify-center items-center">
-            <FadeLoader
+            <MoonLoader
               loading={loading}
-              size={150}
+              size={80}
               aria-label="Loading Spinner"
               data-testid="loader"
             />

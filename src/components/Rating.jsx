@@ -12,8 +12,8 @@ function StarRating({ rating }) {
     // Adding full stars
     for (let i = 0; i < fullStars; i++) {
       starArray.push(
-        <span key={i} className="text-yellow-500 w-5 h-5">
-          <MdStarRate />
+        <span key={i}>
+          <MdStarRate size={25} color="gold" />
         </span>
       );
     }
@@ -21,8 +21,8 @@ function StarRating({ rating }) {
     // Adding partially filled star
     if (remainder > 0) {
       starArray.push(
-        <span key="half" className="text-yellow-500">
-          <IoMdStarHalf />
+        <span key="half">
+          <IoMdStarHalf size={25} color="gold" />
         </span>
       );
     }
@@ -32,7 +32,7 @@ function StarRating({ rating }) {
     for (let i = 0; i < remainingStars - 1; i++) {
       starArray.push(
         <span key={`empty${i}`} className="text-gray-400">
-          <MdOutlineStarBorder />
+          <MdOutlineStarBorder size={25} />
         </span>
       );
     }
