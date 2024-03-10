@@ -1,23 +1,47 @@
-# ToDo App
+# Products Webpage with React 
 
-This is a simple ToDo app that allows users to manage their tasks along with quantities.
+This webpage is built with React and Tailwind CSS, featuring two routes: Products and Product Detailed View.
 
-## Features
-
-- Add a ToDo: Users can add tasks along with quantity.
-- Delete a ToDo: Users can delete tasks from the list.
-- Edit a ToDo: Users can edit the description.
-
-## Note : To edit a todo, enter the description in the input field and click on the edit icon of the todo you wish to update or change.
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript
-- Frameworks/Libraries: React,Tailwind Css 
+- React
+- React Router
+- Tailwind CSS
 
 ## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your local machine.
+
 ### Installation
 
 1. Clone the repository:
 2. git clone https://github.com/Majaveed2002/autonomize_products.git
-3. npm install
-4. npm run dev
+3. Navigate to the project directory
+4. Install dependencies: npm install
+5. Start the development server: npm run dev
+6.  Open your web browser and navigate to `http://localhost:5173/`.
+
+## Routes
+
+### Products
+
+- Path: `/`
+- Description: Displays a list of product cards.
+- Clicking on a product card will direct the user to the Product Detailed View page.
+
+### Product Detailed View
+
+- Path: `/products/:id`
+- Description: Displays detailed information about a specific product.
+- The `:id` parameter represents the unique identifier of the product.
+
+## Usage
+
+1. Navigate to the Products route (`/products`) to view the list of product cards.
+2. Click on a product card to view its detailed information on the Product Detailed View page (`/products/:id`).
+
+
+
+
