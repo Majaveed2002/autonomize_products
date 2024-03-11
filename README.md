@@ -1,8 +1,47 @@
-# React + Vite
+# Products Webpage with React 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This webpage is built with React and Tailwind CSS, featuring two routes: Products and Product Detailed View.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- React Router
+- Tailwind CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your local machine.
+
+### Installation
+
+1. Clone the repository:
+2. git clone https://github.com/Majaveed2002/autonomize_products.git
+3. Navigate to the project directory
+4. Install dependencies: npm install
+5. Start the development server: npm run dev
+6.  Open your web browser and navigate to `http://localhost:5173/`.
+
+## Routes
+
+### Products
+
+- Path: `/`
+- Description: Displays a list of product cards.
+- Clicking on a product card will direct the user to the Product Detailed View page.
+
+### Product Detailed View
+
+- Path: `/products/:id`
+- Description: Displays detailed information about a specific product.
+- The `:id` parameter represents the unique identifier of the product.
+
+## Usage
+
+1. Navigate to the Products route (`/products`) to view the list of product cards.
+2. Click on a product card to view its detailed information on the Product Detailed View page (`/products/:id`).
+
+
+
+
