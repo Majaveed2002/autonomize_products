@@ -14,13 +14,20 @@ function ProductDetailedView() {
       const { id } = params;
       const res = await fetch(`https://fakestoreapi.com/products/${id}`);
       const data = await res.json();
+      const truncatedText =
+        data.description.length > 150
+          ? data.description.slice(0, 150 - 3) + "..."
+          : data.description;
+
+      data.description = truncatedText;
       setProductDetails(data);
       setLoading(false);
     };
     fetchProducts();
   }, []);
+
   return (
-    <div className="h-screen my-auto flex flex-col justify-start items-center bg-image">
+    <div className="min-h-screen my-auto flex flex-col justify-start items-center bg-image">
       <h1 className="text-center lg:mt-[95px] lg:mb-[10px] text-white font-extrabold font-serif sm:text[32px] lg:text-[40px]">
         {productDetails.title}
       </h1>
